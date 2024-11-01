@@ -5,9 +5,8 @@ public class ArrayRataNillai07 {
         Scanner sc = new Scanner(System.in);
 
         double total = 0;
-        double ratalulus, rataTidakLulus;
-        int nilaiLulus = 0, lulus = 0;
-        int nilaiTidakLulus = 0, tidakLulus = 0;
+        double nilaiLulus = 0, nilaiTidakLulus = 0;
+        int lulus = 0, tidakLulus = 0;
         int n;
         
         System.out.print("Masukkan jumlah Mahasiswa = ");
@@ -25,9 +24,9 @@ public class ArrayRataNillai07 {
                 nilaiTidakLulus += nilaiMhs[i];
             }
         }
-        ratalulus = nilaiLulus / lulus;
-        rataTidakLulus = nilaiTidakLulus / tidakLulus;
-        System.out.println("Rata-rata nilai lulus = "+ratalulus);
-        System.out.println("Banyak Mahasiswa tidak lulus = "+rataTidakLulus);
+        nilaiLulus = nilaiLulus / lulus;
+        nilaiTidakLulus = nilaiTidakLulus / tidakLulus;
+        System.out.println("Rata-rata nilai lulus = "+nilaiLulus);
+        System.out.println("Rata-rata nilai tidak lulus = "+nilaiTidakLulus);
     }
 }
